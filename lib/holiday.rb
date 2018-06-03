@@ -72,7 +72,7 @@ end
 def all_holidays_with_bbq(holiday_hash)
   array_bbqs = []
   holiday_hash.each do |season, holidays|
-    season.each do |holiday_name, supplies|
+    holidays.each do |holiday_name, supplies|
       supplies.each do |supply_name|
         if supply_name == "BBQ"
           array_bbqs << holiday_name
